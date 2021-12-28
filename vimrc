@@ -17,4 +17,6 @@ endif
 call plug#begin(data_dir . '/plugins')
     Plug 'preservim/nerdtree'
 call plug#end()
-
+" TODO: I would probably also use markdown-preview
+" TODO: enable tabs for Makefile
+" TODO: set list! if not .py
