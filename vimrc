@@ -1,3 +1,4 @@
+set nocompatible    " Don't pretend to be vi
 set expandtab
 set shiftwidth=4
 set tabstop=4
@@ -7,6 +8,10 @@ set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70
 set list    " Disable with :set list!
 set listchars=tab:▸\ ,space:·,trail:· " looks super nice for Python
 syntax enable
+filetype plugin on  " vim's out of the box plugin support
+
+set path+=**    " drill down into subfolders
+set wildmenu    " display all matching files for tab complete
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
