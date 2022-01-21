@@ -3,6 +3,8 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set number
+set ruler
+set colorcolumn=80
 set title
 set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70
 set list    " Disable with :set list!
@@ -21,6 +23,7 @@ endif
 
 call plug#begin(data_dir . '/plugins')
     Plug 'preservim/nerdtree'
+"    Plug 'iamcco/markdown-preview.vim' it loaded the browser but MD was blank
 call plug#end()
 " TODO: I would probably also use markdown-preview
 " TODO: enable tabs for Makefile
