@@ -1,0 +1,10 @@
+set nocompatible    " Don't pretend to be vi
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set number
+set ruler
+set colorcolumn=80
+set title
+set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70
+syntax enable
