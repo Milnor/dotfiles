@@ -8,3 +8,6 @@ set colorcolumn=80
 set title
 set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70
 syntax enable
+
+" special handling for Makefiles
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
